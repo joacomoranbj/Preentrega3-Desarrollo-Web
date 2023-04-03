@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+header {
+  padding: 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+}
+header .div-header {
+  margin-top: -30px;
+}
+header .icono {
+  width: 130px;
+  height: 130px;
+  margin-top: -40px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header ul li a {
+  color: #f3ce7d;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+header ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+header nav ul {
+  display: flex;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+/* iframe */
+.main-index section {
+  padding: 20px;
+  margin: 30px;
+  border: #5fcda4 solid 1px;
+  border-radius: 50px;
+}
+.main-index section p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+iframe {
+  width: 580px;
+  height: 400px;
+}
+
+.main-iframe {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.h2-main-index {
+  font-size: 35px;
+}
+
+/* footer */
+footer {
+  color: #5fcda4;
+  padding: 50px 0px;
+  height: 300px;
+  border-top: 1px solid #f3ce7d;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+footer ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.p-footer {
+  color: #f3ce7d;
+  display: flex;
+  justify-content: center;
+  margin: 7px;
+}
+
+/* catalogo */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 10px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.gallery-item p {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Sobre Nosotros */
+.sobre-nosotros-main {
+  display: flex;
+  border: solid 1px #5fcda4;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 30px;
+}
+
+.sobre-nosotros-main section p {
+  font-size: 20px;
+  margin: 35px;
+}
+
+.sobre-nosotros-main h2 {
+  font-size: 35px;
+}
+
+/* ayuda */
+.ayuda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.h2-ayuda {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.p-ayuda {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #5fcda4;
+  border: solid 1px #f3ce7d;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.ul-ayuda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ul-ayuda li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+ul div h2 {
+  font-size: 30px;
+  color: #5fcda4;
+}
+
+ul div p {
+  font-size: 15px;
+  margin: 10px;
+}
+
+/* Contacto */
+form {
+  background-color: #f3ce7d;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#id-header {
+  padding: 50px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  height: 132px;
+}
+
+/* Variables */
+/* Estilos generales */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px;
+  color: #5fcda4;
+}
+
+body {
+  background-color: black;
+  color: #f3ce7d;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+/* MEDIAS QUERIES */
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    width: 90%;
+    height: 100px;
+  }
+  .main-index section {
+    width: 620px;
+  }
+  .main-iframe {
+    width: 100px;
+    display: inline-table;
+  }
+  footer {
+    flex-direction: column;
+  }
+  nav {
+    justify-content: center;
+  }
+  .section-index {
+    display: inline-block;
+  }
+  #id-header {
+    height: 230px;
+    width: 100%;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 576px) {
+  header {
+    width: 83%;
+  }
+  .icono {
+    width: 93px;
+    height: 104px;
+    margin-top: -28px;
+  }
+  .main-index {
+    padding: 30px;
+  }
+  .section-index {
+    width: 100%;
+    display: table-cell;
+    padding: 25px;
+  }
+  iframe {
+    width: 485px;
+    height: 400px;
+  }
+  #id-header {
+    height: 218px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

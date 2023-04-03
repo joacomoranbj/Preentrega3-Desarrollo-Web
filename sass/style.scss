@@ -1,0 +1,100 @@
+@import "index";
+@import "catalogo";
+@import "sobre-nosotros";
+@import "ayuda";
+@import "contacto";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Variables */
+
+$amarilloKicksOn: #f3ce7d;
+
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    color: #5fcda4;
+}
+
+body {
+    background-color: black;
+    color: #f3ce7d;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* MEDIAS QUERIES */
+
+/* Tablet */
+@media only screen and (max-width:768px) {
+    header {
+        flex-direction: column;
+        width: 90%;
+        height: 100px;
+    }
+
+    .main-index section {
+        width: 620px;
+    }
+
+    .main-iframe {
+        width: 100px;
+        display: inline-table;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .section-index {
+        display: inline-block;
+    }
+
+    #id-header{
+        height: 230px;
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width:576px) {
+
+    header {
+        width: 83%;
+    }
+
+    .icono {
+        width: 93px;
+        height: 104px;
+        margin-top: -28px;
+    }
+
+    .main-index {
+        padding: 30px;
+    }
+
+    .section-index {
+        width: 100%;
+        display: table-cell;
+        padding: 25px;
+    }
+    
+    iframe {
+        width: 485px;
+        height: 400px;
+    }
+
+    #id-header{
+        height: 218px;
+        width: 100%;
+    }
+}
